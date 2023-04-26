@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using WebSocket4Net;
@@ -94,13 +95,10 @@ namespace Cliente.Helpers
             {
                 var (fileName, totalChunks, currentChunkIndex, fileChunkData) = ParseStompMessage(message);
 
-                // (aquí deberías parsear el mensaje STOMP y extraer la información relevante, como el nombre del archivo, el índice del chunk, etc.)
+                if (String.IsNullOrEmpty(fileName)) return;
 
-                // Asume que ya has extraído la información relevante del mensaje
-                //string fileName = "example.zip";
-                //int totalChunks = 10;
-                //int currentChunkIndex = 1;
-                //byte[] fileChunkData = null; // Reemplaza esto con los datos reales del chunk extraído del mensaje STOMP
+                Console.WriteLine("LLego: " + fileName);
+                // (aquí deberías parsear el mensaje STOMP y extraer la información relevante, como el nombre del archivo, el índice del chunk, etc.)
 
                 // 2. Guarda el estado del archivo en la base de datos
                 var fileRecord = await _fileRepository.GetFileRecordByIdAsync(fileName.GetHashCode());
@@ -109,7 +107,6 @@ namespace Cliente.Helpers
                 {
                     fileRecord = new FileRecord
                     {
-                        Id = fileName.GetHashCode(),
                         FileName = fileName,
                         TotalChunks = totalChunks,
                         ReceivedChunks = 1
@@ -147,10 +144,24 @@ namespace Cliente.Helpers
             }
         }
 
+        private string ExtractJsonContentFromStompMessage(string stompMessage)
+        {
+            int indexOfEmptyLine = stompMessage.IndexOf("\n\n");
+            if (indexOfEmptyLine >= 0)
+            {
+                return stompMessage.Substring(indexOfEmptyLine + 2);
+            }
+
+            return "";
+        }
+
         private (string fileName, int totalChunks, int currentChunkIndex, byte[] fileChunkData) ParseStompMessage(string message)
         {
+            string jsonContent = ExtractJsonContentFromStompMessage(message);
             // Asume que el mensaje STOMP tiene un formato JSON
-            var messageData = JsonConvert.DeserializeObject<dynamic>(message);
+            var messageData = JsonConvert.DeserializeObject<FileChunkInfo>(jsonContent);
+
+            if (messageData == null) return ("", 0, 0, null);
 
             string fileName = messageData.FileName;
             int totalChunks = messageData.TotalChunks;
@@ -175,7 +186,7 @@ namespace Cliente.Helpers
 
             using (var outputStream = new FileStream(outputFile, FileMode.Create, FileAccess.Write))
             {
-                for (int i = 1; i <= totalChunks; i++)
+                for (int i = 0; i < totalChunks; i++)
                 {
                     string chunkFile = Path.Combine(chunksDirectory, $"{fileName}.part{i}");
                     using (var inputStream = new FileStream(chunkFile, FileMode.Open, FileAccess.Read))

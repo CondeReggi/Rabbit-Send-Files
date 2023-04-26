@@ -19,29 +19,36 @@ namespace WebApplication1.Helpers
 
         public void SendMessageToQueue(string message)
         {
-            var factory = new ConnectionFactory()
+            try
             {
-                HostName = _rabbitMqSettings.HostName,
-                UserName = _rabbitMqSettings.Username,
-                Password = _rabbitMqSettings.Password,
-                Port = Convert.ToInt32(_rabbitMqSettings.Port),
-            };
+                var factory = new ConnectionFactory()
+                {
+                    HostName = _rabbitMqSettings.HostName,
+                    UserName = _rabbitMqSettings.Username,
+                    Password = _rabbitMqSettings.Password,
+                    Port = Convert.ToInt32(_rabbitMqSettings.Port),
+                };
 
-            using (var connection = factory.CreateConnection())
-            using (var channel = connection.CreateModel())
+                using (var connection = factory.CreateConnection())
+                using (var channel = connection.CreateModel())
+                {
+                    channel.QueueDeclare(queue: _rabbitMqSettings.QueueName,
+                                         durable: true,
+                                         exclusive: false,
+                                         autoDelete: false,
+                                         arguments: null);
+
+                    var body = Encoding.UTF8.GetBytes(message);
+
+                    channel.BasicPublish(exchange: "",
+                                         routingKey: _rabbitMqSettings.QueueName,
+                                         basicProperties: null,
+                                         body: body);
+                }
+            }
+            catch(Exception ex)
             {
-                channel.QueueDeclare(queue: _rabbitMqSettings.QueueName,
-                                     durable: false,
-                                     exclusive: false,
-                                     autoDelete: false,
-                                     arguments: null);
-
-                var body = Encoding.UTF8.GetBytes(message);
-
-                channel.BasicPublish(exchange: "",
-                                     routingKey: _rabbitMqSettings.QueueName,
-                                     basicProperties: null,
-                                     body: body);
+                Console.WriteLine(ex.Message);
             }
         }
     }

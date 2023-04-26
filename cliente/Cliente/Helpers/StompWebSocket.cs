@@ -57,12 +57,14 @@ public class StompWebSocket
         {
             var stompMessage = e.Message;
 
+            Console.WriteLine(stompMessage);
+
             if (stompMessage.Contains("CONNECTED"))
             {
+                Console.WriteLine("El servidor aceptó la conexión, pero esperamos el recibo de conexión antes de suscribirnos");
                 // El servidor aceptó la conexión, pero esperamos el recibo de conexión antes de suscribirnos
-            }
-            else if (stompMessage.Contains("RECEIPT") && stompMessage.Contains("receipt-id:connect-receipt"))
-            {
+
+                Console.WriteLine("Ahora que se ha recibido el recibo, intentamos suscribirnos a la cola");
                 // Ahora que se ha recibido el recibo, intentamos suscribirnos a la cola
                 if (!_connectReceiptReceived)
                 {
@@ -70,11 +72,21 @@ public class StompWebSocket
                     await SubscribeAsync(_queueName);
                 }
             }
+            else if (stompMessage.Contains("RECEIPT") && stompMessage.Contains("receipt-id:connect-receipt"))
+            {
+                // Ahora que se ha recibido el recibo, intentamos suscribirnos a la cola
+                //if (!_connectReceiptReceived)
+                //{
+                //    _connectReceiptReceived = true;
+                //    await SubscribeAsync(_queueName);
+                //}
+
+                Console.WriteLine("Suscripción a la cola confirmada.");
+            }
             else if (stompMessage == "\n")
             {
                 //MessageReceived?.Invoke(this, stompMessage);
                 Console.WriteLine(stompMessage);
-                SendMessage("\n");
             }
             else if (stompMessage != null)
             {
@@ -113,6 +125,7 @@ public class StompWebSocket
         }
     }
 
+
     private async Task AwaitForConnection()
     {
         const int maxRetryAttempts = 5;
@@ -134,6 +147,7 @@ public class StompWebSocket
 
         if (IsConnected)
         {
+            Console.WriteLine("ENVIANDO " + message);
             _webSocket.Send(message);
         }
         else

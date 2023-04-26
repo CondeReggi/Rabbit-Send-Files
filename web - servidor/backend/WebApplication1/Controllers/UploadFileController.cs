@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
+using System;
 using System.IO;
 using System.Threading.Tasks;
 using WebApplication1.Helpers;
@@ -54,8 +56,25 @@ namespace WebApplication1.Controllers
             }
             else
             {
+                byte[] fileBytes;
+                using (var ms = new MemoryStream())
+                {
+                    file.CopyTo(ms);
+                    fileBytes = ms.ToArray();
+                }
+
+                var fileChunkInfo = new FileChunkInfo
+                {
+                    FileName = file.FileName,
+                    TotalChunks = 1,
+                    CurrentChunkIndex = 0,
+                    FileChunkData = Convert.ToBase64String(fileBytes)
+                };
+
+                var jsonMessage = JsonConvert.SerializeObject(fileChunkInfo);
+                _rabbitMqHelper.SendMessageToQueue(jsonMessage);
                 // Procesar el archivo y enviar a la cola de mensajería
-                _rabbitMqHelper.SendMessageToQueue($"Archivo: {file.FileName}, Tamaño: {file.Length}");
+                //_rabbitMqHelper.SendMessageToQueue($"Archivo: {file.FileName}, Tamaño: {file.Length}");
             }
 
             return Ok(new { status = "Archivo cargado y procesado con éxito" });
