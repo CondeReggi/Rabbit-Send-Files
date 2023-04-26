@@ -1,0 +1,7 @@
+2023-04-26 10:05:26.212 -03:00 [FTL] Application startup exception
+System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
