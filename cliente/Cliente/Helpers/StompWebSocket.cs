@@ -9,6 +9,7 @@ public class StompWebSocket
     private readonly string _queueName;
     private readonly string _username;
     private readonly string _password;
+    private string _uniqueSubscriptionId = "";
     public bool IsConnected { get; private set; } = true;
     public bool _connectReceiptReceived { get; private set; } = false;
 
@@ -107,6 +108,14 @@ public class StompWebSocket
         var connectMessage = $"CONNECT\nlogin:{_username}\npasscode:{_password}\naccept-version:1.2\nheart-beat:10000,10000\n\n\0";
         SendMessage(connectMessage);
     }
+    public async Task UnsubscribeAsync()
+    {
+        if (IsConnected && !string.IsNullOrEmpty(_uniqueSubscriptionId))
+        {
+            var unsubscribeMessage = $"UNSUBSCRIBE\nid:{_uniqueSubscriptionId}\n\n\0";
+            SendMessage(unsubscribeMessage);
+        }
+    }
 
     public async Task SubscribeAsync(string queueName)
     {
@@ -116,6 +125,7 @@ public class StompWebSocket
         {
             var uniqueSubscriptionId = Guid.NewGuid().ToString();
             var subscribeMessage = $"SUBSCRIBE\nid:{uniqueSubscriptionId}\ndestination:{queueName}\nack:auto\nreceipt:subscribe-receipt\n\n\0";
+            _uniqueSubscriptionId = uniqueSubscriptionId;
             SendMessage(subscribeMessage);
         }
         else

@@ -27,10 +27,7 @@ namespace Cliente.Helpers
         public FileProcessingApp(IOptions<RabbitMqSettings> rabbitMqSettings, FileRepository fileRepository)
         {
             _rabbitMqSettings = rabbitMqSettings.Value;
-            _stompWebSocket = new StompWebSocket("ws://localhost:15674/ws", _rabbitMqSettings.QueueName, _rabbitMqSettings.Username, _rabbitMqSettings.Password); // Cambia a la dirección de tu servidor
-            //_stompWebSocket.MessageReceived += StompWebSocket_MessageReceived;
-
-            //_logger = logger;
+            _stompWebSocket = new StompWebSocket("ws://localhost:15674/ws", _rabbitMqSettings.QueueName, _rabbitMqSettings.Username, _rabbitMqSettings.Password); 
             _fileRepository = fileRepository;   
         }
 
@@ -136,6 +133,12 @@ namespace Cliente.Helpers
                     // Combina todos los chunks en el archivo final y elimina el registro de la base de datos
                     await CombineFileChunksAsync(fileName, totalChunks);
                     await _fileRepository.DeleteFileRecordAsync(fileRecord.Id);
+
+                    //Me desconecto de la queue y la vuelvo a conectar
+                    await _stompWebSocket.UnsubscribeAsync();
+
+                    //Vuelvo a conectarme para garantizar que siempre escuche luego de procesar almenos un archivo.
+                    await _stompWebSocket.SubscribeAsync(_rabbitMqSettings.QueueName);
                 }
             }
             catch(Exception ex)
