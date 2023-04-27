@@ -28,13 +28,39 @@ function App() {
     }
   };
 
+  // return (
+  //     <div className="App">
+  //       <h1>Subir Archivo</h1>
+  //       <div className="file-upload-container">
+  //         <input type="file" id="file" className="file-input" onChange={handleFileChange} />
+  //         <label htmlFor="file" className="file-label">
+  //           <span className="file-custom"></span>
+  //         </label>
+  //       </div>
+  //       <button className="upload-button" onClick={handleFileUpload}>Subir Archivo</button>
+  //     </div>
+  //   );
+
   return (
     <div className="App">
       <h1>Subir Archivo</h1>
-      <input type="file" onChange={handleFileChange} />
-      <button onClick={handleFileUpload}>Subir Archivo</button>
+      <div className="file-upload-container">
+        <input type="file" id="file" className="file-input" onChange={handleFileChange} />
+        <label htmlFor="file" className="file-label">
+          <span className="file-custom"></span>
+        </label>
+      </div>
+      {selectedFile && <p className="file-name">{selectedFile.name}</p>}
+      <button className="upload-button" onClick={handleFileUpload}>Subir Archivo</button>
     </div>
   );
+
+    // <div className="App">
+    //   <h1>Subir Archivo</h1>
+    //   <input type="file" onChange={handleFileChange  } />
+    //   <button onClick={handleFileUpload}>Subir Archivo</button>
+    // </div>
+  // );
 }
 
 export default App;
