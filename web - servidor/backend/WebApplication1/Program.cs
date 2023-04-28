@@ -28,6 +28,10 @@ namespace WebApplication1
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.ConfigureKestrel(options =>
+                    {
+                        options.Limits.MaxRequestBodySize = long.MaxValue;
+                    });
                 });
     }
 }

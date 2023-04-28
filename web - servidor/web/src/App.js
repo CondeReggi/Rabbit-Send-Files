@@ -19,7 +19,16 @@ function App() {
     formData.append("file", selectedFile);
 
     try {
-      const response = await axios.post("https://localhost:44323/api/UploadFile/upload", formData);
+      const apiClient = axios.create({
+        baseURL: "https://localhost:44323/api/UploadFile",
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+        maxContentLength: Infinity,
+        maxBodyLength: Infinity,
+      });
+
+      const response = await apiClient.post("/upload", formData);
       console.log(response.data);
       alert("Archivo subido con éxito!");
     } catch (error) {
@@ -55,11 +64,11 @@ function App() {
     </div>
   );
 
-    // <div className="App">
-    //   <h1>Subir Archivo</h1>
-    //   <input type="file" onChange={handleFileChange  } />
-    //   <button onClick={handleFileUpload}>Subir Archivo</button>
-    // </div>
+  // <div className="App">
+  //   <h1>Subir Archivo</h1>
+  //   <input type="file" onChange={handleFileChange  } />
+  //   <button onClick={handleFileUpload}>Subir Archivo</button>
+  // </div>
   // );
 }
 

@@ -50,7 +50,7 @@ namespace WebApplication1.Controllers
                 file.CopyTo(stream);
             }
 
-            if (file.Length > 20 * 1024 * 1024) // 20 MB
+            if (file.Length > 8 * 1024 * 1024) // 20 MB => ahora lo tengo con 8 MB porque no tengo ninugno de mas de 20 mb entonces necesito ver si lo fracciona
             {
                 _fileHelper.DivideFile(file, filePath, tempFolderPath);
             }

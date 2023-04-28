@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -39,6 +40,21 @@ namespace WebApplication1
             });
             services.AddCors();
             services.AddDbContext<APPContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Database")));
+
+            //services.Configure<FormOptions>(options =>
+            //{
+            //    options.MultipartBodyLengthLimit = 600_000_000; //600 MB
+            //});
+
+            services.Configure<FormOptions>(options =>
+            {
+                options.ValueLengthLimit = int.MaxValue;
+                options.MultipartBodyLengthLimit = long.MaxValue;
+                options.MemoryBufferThreshold = int.MaxValue;
+            });
+
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

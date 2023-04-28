@@ -22,6 +22,7 @@ namespace Cliente.Helpers
         private readonly StompWebSocket _stompWebSocket;
         //private readonly ILogger _logger;
         private readonly FileRepository _fileRepository;
+        private bool stopProcessing;
 
         //public FileProcessingApp(IOptions<RabbitMqSettings> rabbitMqSettings, ILogger logger)
         public FileProcessingApp(IOptions<RabbitMqSettings> rabbitMqSettings, FileRepository fileRepository)
@@ -59,33 +60,72 @@ namespace Cliente.Helpers
             //    Console.ReadLine();
             //}
         }
+        private string GetMessageId(string stompMessage)
+        {
+            var lines = stompMessage.Split('\n');
+            foreach (var line in lines)
+            {
+                if (line.StartsWith("message-id:"))
+                {
+                    return line.Substring("message-id:".Length);
+                }
+            }
+            return null;
+        }
+
+        public WebSocketState GetStatusSocket()
+        {
+            return _stompWebSocket.GetSocketState();
+        }
 
         public async Task RunAsync(CancellationToken cancellationToken)
         {
-            // Conéctate al servidor STOMP
-            _stompWebSocket.Connect();
+            //// Conéctate al servidor STOMP
+            //_stompWebSocket.Connect();
+            //_stompWebSocket.MessageReceived += StompWebSocket_MessageReceived;
+            //// Me suscribo a la cola que tengo en el appsettings
+            ////SubscribeToQueueAsync();
+            //// Espera a que se cancele la aplicación
+            ////await Task.Delay(-1, cancellationToken);
+            //var tcs = new TaskCompletionSource<bool>();
+            //// Registra el manejador de cancelación
+            //cancellationToken.Register(() => tcs.TrySetCanceled());
+            //// Espera a que se complete la tarea o se cancele la aplicación
+            //await tcs.Task;
 
-            _stompWebSocket.MessageReceived += StompWebSocket_MessageReceived;
+            cancellationToken.Register(() => stopProcessing = true);
 
-            // Me suscribo a la cola que tengo en el appsettings
-            //SubscribeToQueueAsync();
+            while (!stopProcessing)
+            {
+                _stompWebSocket.Connect();
+                _stompWebSocket.MessageReceived += StompWebSocket_MessageReceived;
 
-            // Espera a que se cancele la aplicación
-            await Task.Delay(-1, cancellationToken);
-        }
+                // Utiliza un TaskCompletionSource para controlar cuándo se completa la tarea
+                var tcs = new TaskCompletionSource<bool>();
 
-        private void ProcessFile(string message)
-        {
-            // Aquí puedes implementar la lógica para procesar el archivo
-            // según la información recibida en el mensaje
-            Console.WriteLine($"Procesando archivo: {message}");
+                // Registra el manejador de eventos de desconexión
+                _stompWebSocket.Closed += (sender, e) =>
+                {
+                    Console.WriteLine("Se desconecto desde FileProcessing");
+                    tcs.TrySetResult(true);
+                };
+
+                // Espera a que se complete la tarea, se desconecte o se cancele la aplicación
+                await tcs.Task;
+                if (stopProcessing) break;
+
+                // Espera un tiempo antes de intentar reconectar
+                await Task.Delay(TimeSpan.FromSeconds(5), cancellationToken);
+            }
         }
 
         private async void StompWebSocket_MessageReceived(object sender, string message)
         {
             if (message.Contains("SUBSCRIBE") || message.Contains("CONNECT")) return;
 
-            //_logger.LogInformation("Message received: {0}", message);
+            string messageId = string.Empty;
+
+            if (message.Contains("MESSAGE")) messageId = GetMessageId(message);
 
             // 1. Parsea el mensaje STOMP
             try
@@ -124,21 +164,29 @@ namespace Cliente.Helpers
                 await File.WriteAllBytesAsync(chunkFile, fileChunkData);
 
                 // 4. Envía un ACK al servidor
-                SendStompAckAsync(_stompWebSocket, message);
+                _stompWebSocket.SendStompAckAsync(messageId);
                 // (aquí deberías enviar un ACK al servidor usando la conexión STOMP)
 
                 // 5. Verifica si se han recibido todos los chunks
                 if (fileRecord.ReceivedChunks == fileRecord.TotalChunks)
                 {
+                    await Task.Delay(TimeSpan.FromSeconds(5));
                     // Combina todos los chunks en el archivo final y elimina el registro de la base de datos
                     await CombineFileChunksAsync(fileName, totalChunks);
                     await _fileRepository.DeleteFileRecordAsync(fileRecord.Id);
 
                     //Me desconecto de la queue y la vuelvo a conectar
-                    await _stompWebSocket.UnsubscribeAsync();
 
-                    //Vuelvo a conectarme para garantizar que siempre escuche luego de procesar almenos un archivo.
-                    await _stompWebSocket.SubscribeAsync(_rabbitMqSettings.QueueName);
+                    if (_stompWebSocket.GetSocketState() == WebSocketState.Open)
+                    {
+                        _stompWebSocket.UnsubscribeAsync();
+                    }
+
+                    if (_stompWebSocket.GetSocketState() == WebSocketState.Open)
+                    {
+                        //Vuelvo a conectarme para garantizar que siempre escuche luego de procesar almenos un archivo.
+                        await _stompWebSocket.SubscribeAsync(_rabbitMqSettings.QueueName);
+                    }
                 }
             }
             catch(Exception ex)
@@ -174,12 +222,6 @@ namespace Cliente.Helpers
             return (fileName, totalChunks, currentChunkIndex, fileChunkData);
         }
 
-        private void SendStompAckAsync(StompWebSocket stompWebSocket, string message)
-        {
-            // Envía un ACK al servidor usando la conexión WebSocket
-            stompWebSocket.SendMessage("ACK");
-        }
-
         private async Task CombineFileChunksAsync(string fileName, int totalChunks)
         {
             string chunksDirectory = "chunks";
@@ -200,9 +242,5 @@ namespace Cliente.Helpers
                 }
             }
         }
-        //private async Task SubscribeToQueueAsync()
-        //{
-        //    await _stompWebSocket.SubscribeAsync(_rabbitMqSettings.QueueName);
-        //}
     }
 }

@@ -1,0 +1,508 @@
+2023-04-28 09:13:35.430 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 09:13:35.466 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger - -
+2023-04-28 09:13:35.499 -03:00 [INF] Hosting environment: Development
+2023-04-28 09:13:35.500 -03:00 [INF] Content root path: C:\Users\lconde\Desktop\Dividir archivos\web - servidor\backend\WebApplication1
+2023-04-28 09:13:35.571 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/index.html - -
+2023-04-28 09:13:35.590 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger - - - 301 - - 126.6281ms
+2023-04-28 09:13:35.700 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/index.html - - - 200 - text/html;charset=utf-8 131.9943ms
+2023-04-28 09:13:35.714 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/swagger-ui-bundle.js - -
+2023-04-28 09:13:35.714 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/swagger-ui-standalone-preset.js - -
+2023-04-28 09:13:35.715 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/swagger-ui.css - -
+2023-04-28 09:13:35.761 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-04-28 09:13:35.761 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-04-28 09:13:35.761 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-04-28 09:13:35.766 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/swagger-ui.css - - - 200 142933 text/css 51.5618ms
+2023-04-28 09:13:35.780 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 65.4041ms
+2023-04-28 09:13:35.814 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 100.5228ms
+2023-04-28 09:13:37.561 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44323/swagger/swagger-ui-bundle.js.map - -
+2023-04-28 09:13:37.608 -03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js.map responded 404 in 0.4470 ms
+2023-04-28 09:13:37.611 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44323/swagger/swagger-ui-bundle.js.map - - - 404 - - 50.1360ms
+2023-04-28 09:13:38.726 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44323/swagger/swagger-ui-standalone-preset.js.map - -
+2023-04-28 09:13:38.727 -03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js.map responded 404 in 0.0123 ms
+2023-04-28 09:13:38.731 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44323/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 2.8737ms
+2023-04-28 09:13:39.461 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - -
+2023-04-28 09:13:39.565 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 104.1453ms
+2023-04-28 09:14:05.298 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundarycILDXrlWsVlvDleB 11351893
+2023-04-28 09:14:05.308 -03:00 [INF] CORS policy execution successful.
+2023-04-28 09:14:05.313 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:14:05.355 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 09:14:06.259 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 09:14:06.277 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 917.3907ms
+2023-04-28 09:14:06.278 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:14:06.281 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundarycILDXrlWsVlvDleB 11351893 - 200 - application/json;+charset=utf-8 983.4425ms
+2023-04-28 09:15:03.245 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundarydhdXfjkRUyfK9bnk 11351893
+2023-04-28 09:15:03.247 -03:00 [INF] CORS policy execution successful.
+2023-04-28 09:15:03.250 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:15:03.250 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 09:15:03.671 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 09:15:03.675 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 424.0229ms
+2023-04-28 09:15:03.675 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:15:03.678 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundarydhdXfjkRUyfK9bnk 11351893 - 200 - application/json;+charset=utf-8 433.0470ms
+2023-04-28 09:15:56.220 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryY58XZSjWz7WnSetL 11351893
+2023-04-28 09:15:56.221 -03:00 [INF] CORS policy execution successful.
+2023-04-28 09:15:56.222 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:15:56.222 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 09:15:56.585 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 09:15:56.588 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 365.5813ms
+2023-04-28 09:15:56.588 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:15:56.590 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryY58XZSjWz7WnSetL 11351893 - 200 - application/json;+charset=utf-8 370.0526ms
+2023-04-28 09:17:00.947 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryqDadp8zQBwDJ2hIB 13155160
+2023-04-28 09:17:00.947 -03:00 [INF] CORS policy execution successful.
+2023-04-28 09:17:00.947 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:17:00.948 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 09:17:02.780 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 09:17:02.786 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 1837.9137ms
+2023-04-28 09:17:02.786 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:17:02.791 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryqDadp8zQBwDJ2hIB 13155160 - 200 - application/json;+charset=utf-8 1844.6574ms
+2023-04-28 09:19:20.044 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryO1yFXORdARrwhNIs 13155160
+2023-04-28 09:19:20.044 -03:00 [INF] CORS policy execution successful.
+2023-04-28 09:19:20.046 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:19:20.046 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 09:19:20.487 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 09:19:20.490 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 444.5322ms
+2023-04-28 09:19:20.491 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:19:20.493 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryO1yFXORdARrwhNIs 13155160 - 200 - application/json;+charset=utf-8 448.5950ms
+2023-04-28 09:23:02.779 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryNkA4USR8GsES8VHH 13155160
+2023-04-28 09:23:02.781 -03:00 [INF] CORS policy execution successful.
+2023-04-28 09:23:02.781 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:23:02.784 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 09:23:02.932 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryN49Tmt1DdA88fqRN 13155160
+2023-04-28 09:23:02.933 -03:00 [INF] CORS policy execution successful.
+2023-04-28 09:23:02.933 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:23:02.934 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 09:23:03.069 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryPsSph8Ak3nDRyZRb 13155160
+2023-04-28 09:23:03.069 -03:00 [INF] CORS policy execution successful.
+2023-04-28 09:23:03.069 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:23:03.070 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 09:23:03.220 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundary43D7Xz2CMi3EDRAO 13155160
+2023-04-28 09:23:03.220 -03:00 [INF] CORS policy execution successful.
+2023-04-28 09:23:03.220 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:23:03.221 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 09:23:03.354 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 420.1845ms
+2023-04-28 09:23:03.355 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:23:03.382 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryIVmPXuqGwi6r5gIr 13155160
+2023-04-28 09:23:03.382 -03:00 [INF] CORS policy execution successful.
+2023-04-28 09:23:03.382 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:23:03.382 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 09:23:03.524 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundarypJfsEY1nB55uuUde 13155160
+2023-04-28 09:23:03.359 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.IOException: The process cannot access the file 'C:\Users\lconde\Desktop\Dividir archivos\web - servidor\backend\WebApplication1\TempFiles\Backup BDB.rar' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebApplication1.Controllers.UploadFileController.Upload(IFormFile file) in C:\Users\lconde\Desktop\Dividir archivos\web - servidor\backend\WebApplication1\Controllers\UploadFileController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-04-28 09:23:03.524 -03:00 [INF] CORS policy execution successful.
+2023-04-28 09:23:03.526 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:23:03.527 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 09:23:03.545 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryN49Tmt1DdA88fqRN 13155160 - 500 - text/plain 612.5648ms
+2023-04-28 09:23:03.621 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 09:23:03.625 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 840.519ms
+2023-04-28 09:23:03.625 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:23:03.625 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 555.7428ms
+2023-04-28 09:23:03.626 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:23:03.628 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryNkA4USR8GsES8VHH 13155160 - 200 - application/json;+charset=utf-8 849.5394ms
+2023-04-28 09:23:03.627 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.IOException: The process cannot access the file 'C:\Users\lconde\Desktop\Dividir archivos\web - servidor\backend\WebApplication1\TempFiles\Backup BDB.rar' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebApplication1.Controllers.UploadFileController.Upload(IFormFile file) in C:\Users\lconde\Desktop\Dividir archivos\web - servidor\backend\WebApplication1\Controllers\UploadFileController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-04-28 09:23:03.639 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryPsSph8Ak3nDRyZRb 13155160 - 500 - text/plain 570.2351ms
+2023-04-28 09:23:03.986 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 603.8791ms
+2023-04-28 09:23:03.987 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:23:03.990 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.IOException: The process cannot access the file 'C:\Users\lconde\Desktop\Dividir archivos\web - servidor\backend\WebApplication1\TempFiles\Backup BDB.rar' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebApplication1.Controllers.UploadFileController.Upload(IFormFile file) in C:\Users\lconde\Desktop\Dividir archivos\web - servidor\backend\WebApplication1\Controllers\UploadFileController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-04-28 09:23:04.009 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryIVmPXuqGwi6r5gIr 13155160 - 500 - text/plain 627.3896ms
+2023-04-28 09:23:04.123 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 596.6559ms
+2023-04-28 09:23:04.124 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:23:04.130 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.IO.IOException: The process cannot access the file 'C:\Users\lconde\Desktop\Dividir archivos\web - servidor\backend\WebApplication1\TempFiles\Backup BDB.rar' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at WebApplication1.Controllers.UploadFileController.Upload(IFormFile file) in C:\Users\lconde\Desktop\Dividir archivos\web - servidor\backend\WebApplication1\Controllers\UploadFileController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-04-28 09:23:04.135 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundarypJfsEY1nB55uuUde 13155160 - 500 - text/plain 611.4008ms
+2023-04-28 09:23:04.205 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 09:23:04.209 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 988.0183ms
+2023-04-28 09:23:04.209 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:23:04.211 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundary43D7Xz2CMi3EDRAO 13155160 - 200 - application/json;+charset=utf-8 990.8407ms
+2023-04-28 09:27:14.967 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryAsmkjqZxRBGmvUP1 13155160
+2023-04-28 09:27:14.969 -03:00 [INF] CORS policy execution successful.
+2023-04-28 09:27:14.969 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:27:14.969 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 09:27:15.389 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 09:27:15.392 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 422.5013ms
+2023-04-28 09:27:15.392 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:27:15.395 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryAsmkjqZxRBGmvUP1 13155160 - 200 - application/json;+charset=utf-8 427.5169ms
+2023-04-28 09:27:43.740 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryX4mwVLDXq6QLBKk4 13155160
+2023-04-28 09:27:43.741 -03:00 [INF] CORS policy execution successful.
+2023-04-28 09:27:43.741 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:27:43.741 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 09:27:44.248 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 09:27:44.251 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 509.6303ms
+2023-04-28 09:27:44.251 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:27:44.253 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryX4mwVLDXq6QLBKk4 13155160 - 200 - application/json;+charset=utf-8 513.6730ms
+2023-04-28 09:29:27.198 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryoyKAJBc9vVnIIDyB 13155160
+2023-04-28 09:29:27.199 -03:00 [INF] CORS policy execution successful.
+2023-04-28 09:29:27.199 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:29:27.199 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 09:29:27.691 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 09:29:27.694 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 491.6893ms
+2023-04-28 09:29:27.694 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:29:27.697 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryoyKAJBc9vVnIIDyB 13155160 - 200 - application/json;+charset=utf-8 498.6550ms
+2023-04-28 09:35:01.502 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundary6943MJAAuP1DcdRz 13155160
+2023-04-28 09:35:01.502 -03:00 [INF] CORS policy execution successful.
+2023-04-28 09:35:01.502 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:35:01.504 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 09:35:01.996 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 09:35:02.000 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 496.0897ms
+2023-04-28 09:35:02.000 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:35:02.003 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundary6943MJAAuP1DcdRz 13155160 - 200 - application/json;+charset=utf-8 501.0165ms
+2023-04-28 09:36:08.003 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryOZfYqW1Xw0HUnbxM 13155160
+2023-04-28 09:36:08.004 -03:00 [INF] CORS policy execution successful.
+2023-04-28 09:36:08.005 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:36:08.007 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 09:36:08.443 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 09:36:08.446 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 438.2075ms
+2023-04-28 09:36:08.446 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 09:36:08.450 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryOZfYqW1Xw0HUnbxM 13155160 - 200 - application/json;+charset=utf-8 446.6451ms
+2023-04-28 10:32:04.552 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundary4qtrZZaavAVAaMee 131133
+2023-04-28 10:32:04.553 -03:00 [INF] CORS policy execution successful.
+2023-04-28 10:32:04.555 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 10:32:04.555 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 10:32:04.579 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 10:32:04.581 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 26.0563ms
+2023-04-28 10:32:04.582 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 10:32:04.582 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundary4qtrZZaavAVAaMee 131133 - 200 - application/json;+charset=utf-8 29.6879ms
+2023-04-28 10:32:23.619 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryBAXKKLBIHsd6geoJ 131133
+2023-04-28 10:32:23.619 -03:00 [INF] CORS policy execution successful.
+2023-04-28 10:32:23.620 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 10:32:23.620 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 10:32:23.643 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 10:32:23.646 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 26.2265ms
+2023-04-28 10:32:23.646 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 10:32:23.647 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryBAXKKLBIHsd6geoJ 131133 - 200 - application/json;+charset=utf-8 27.3671ms
+2023-04-28 10:34:23.786 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryGqj6Ohqyc82t4jEs 131133
+2023-04-28 10:34:23.786 -03:00 [INF] CORS policy execution successful.
+2023-04-28 10:34:23.786 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 10:34:23.787 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 10:34:23.815 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 10:34:23.817 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 30.0223ms
+2023-04-28 10:34:23.817 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 10:34:23.818 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryGqj6Ohqyc82t4jEs 131133 - 200 - application/json;+charset=utf-8 31.4917ms
+2023-04-28 10:39:18.503 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundarygfVqdLe8AOzvPUSI 131133
+2023-04-28 10:39:18.504 -03:00 [INF] CORS policy execution successful.
+2023-04-28 10:39:18.504 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 10:39:18.506 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 10:39:18.533 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 10:39:18.536 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 29.2804ms
+2023-04-28 10:39:18.536 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 10:39:18.537 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundarygfVqdLe8AOzvPUSI 131133 - 200 - application/json;+charset=utf-8 33.6259ms
+2023-04-28 10:41:45.057 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundary1UUKZi7OsZQPWB1G 13155160
+2023-04-28 10:41:45.058 -03:00 [INF] CORS policy execution successful.
+2023-04-28 10:41:45.058 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 10:41:45.060 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 10:41:45.367 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 10:41:45.369 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 308.9904ms
+2023-04-28 10:41:45.369 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 10:41:45.371 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundary1UUKZi7OsZQPWB1G 13155160 - 200 - application/json;+charset=utf-8 313.7923ms
+2023-04-28 10:42:44.765 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryzknlW9QzkHxznG17 13155160
+2023-04-28 10:42:44.765 -03:00 [INF] CORS policy execution successful.
+2023-04-28 10:42:44.766 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 10:42:44.766 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 10:42:45.084 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 10:42:45.086 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 320.6648ms
+2023-04-28 10:42:45.086 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 10:42:45.088 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryzknlW9QzkHxznG17 13155160 - 200 - application/json;+charset=utf-8 323.1518ms
+2023-04-28 10:43:49.748 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryctmXMy9NOBHsrx7w 13155160
+2023-04-28 10:43:49.748 -03:00 [INF] CORS policy execution successful.
+2023-04-28 10:43:49.748 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 10:43:49.749 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 10:43:50.097 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 10:43:50.099 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 350.4266ms
+2023-04-28 10:43:50.099 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 10:43:50.101 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryctmXMy9NOBHsrx7w 13155160 - 200 - application/json;+charset=utf-8 353.1059ms
+2023-04-28 11:44:27.064 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryycJuqZ4b4c6pCEXR 13155160
+2023-04-28 11:44:27.064 -03:00 [INF] CORS policy execution successful.
+2023-04-28 11:44:27.064 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:44:27.065 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 11:44:27.792 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 11:44:27.794 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 729.0567ms
+2023-04-28 11:44:27.794 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:44:27.796 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryycJuqZ4b4c6pCEXR 13155160 - 200 - application/json;+charset=utf-8 732.5815ms
+2023-04-28 11:51:58.077 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryWg8qRwB9ZDzkqmKA 13155160
+2023-04-28 11:51:58.077 -03:00 [INF] CORS policy execution successful.
+2023-04-28 11:51:58.079 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:51:58.079 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 11:51:58.374 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 11:51:58.375 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 296.0325ms
+2023-04-28 11:51:58.375 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:51:58.377 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryWg8qRwB9ZDzkqmKA 13155160 - 200 - application/json;+charset=utf-8 300.0280ms
+2023-04-28 11:54:05.001 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundary3D2fyQeDL20WgsOD 13155160
+2023-04-28 11:54:05.001 -03:00 [INF] CORS policy execution successful.
+2023-04-28 11:54:05.001 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:54:05.001 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 11:54:05.273 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 11:54:05.276 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 274.6437ms
+2023-04-28 11:54:05.276 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:54:05.278 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundary3D2fyQeDL20WgsOD 13155160 - 200 - application/json;+charset=utf-8 277.2876ms
+2023-04-28 11:54:21.356 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundarySjto2phsCgQSUvvY 3903320
+2023-04-28 11:54:21.356 -03:00 [INF] CORS policy execution successful.
+2023-04-28 11:54:21.356 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:54:21.356 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 11:54:21.474 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 11:54:21.476 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 119.8025ms
+2023-04-28 11:54:21.476 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:54:21.477 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundarySjto2phsCgQSUvvY 3903320 - 200 - application/json;+charset=utf-8 121.2595ms
+2023-04-28 11:54:31.518 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryZmT23kwBaLIESzJf 70308
+2023-04-28 11:54:31.519 -03:00 [INF] CORS policy execution successful.
+2023-04-28 11:54:31.519 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:54:31.519 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 11:54:31.560 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 11:54:31.561 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 42.674ms
+2023-04-28 11:54:31.562 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:54:31.562 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryZmT23kwBaLIESzJf 70308 - 200 - application/json;+charset=utf-8 43.7783ms
+2023-04-28 11:54:36.222 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryOSEzOfIDSNVoGBdp 70308
+2023-04-28 11:54:36.222 -03:00 [INF] CORS policy execution successful.
+2023-04-28 11:54:36.222 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:54:36.222 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 11:54:36.238 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 11:54:36.241 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 18.4803ms
+2023-04-28 11:54:36.241 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:54:36.242 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryOSEzOfIDSNVoGBdp 70308 - 200 - application/json;+charset=utf-8 20.5743ms
+2023-04-28 11:54:46.341 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryhP0W3qYolgSaShfq 33851
+2023-04-28 11:54:46.341 -03:00 [INF] CORS policy execution successful.
+2023-04-28 11:54:46.341 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:54:46.341 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 11:54:46.351 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 11:54:46.354 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 12.1066ms
+2023-04-28 11:54:46.354 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:54:46.354 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryhP0W3qYolgSaShfq 33851 - 200 - application/json;+charset=utf-8 13.1872ms
+2023-04-28 11:55:04.540 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryh6mu2g6K0xCdkVeJ 33851
+2023-04-28 11:55:04.540 -03:00 [INF] CORS policy execution successful.
+2023-04-28 11:55:04.540 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:55:04.541 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 11:55:04.555 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 11:55:04.558 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 16.998ms
+2023-04-28 11:55:04.558 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:55:04.558 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryh6mu2g6K0xCdkVeJ 33851 - 200 - application/json;+charset=utf-8 17.8646ms
+2023-04-28 11:57:24.530 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryrtz6NDAJijwBj3eh 33851
+2023-04-28 11:57:24.530 -03:00 [INF] CORS policy execution successful.
+2023-04-28 11:57:24.530 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:57:24.532 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 11:57:24.551 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 11:57:24.552 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 20.1698ms
+2023-04-28 11:57:24.553 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:57:24.553 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryrtz6NDAJijwBj3eh 33851 - 200 - application/json;+charset=utf-8 22.7056ms
+2023-04-28 11:57:38.627 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryiapGwMnyglAwgpzL 131133
+2023-04-28 11:57:38.627 -03:00 [INF] CORS policy execution successful.
+2023-04-28 11:57:38.628 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:57:38.628 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 11:57:38.647 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 11:57:38.650 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 22.2158ms
+2023-04-28 11:57:38.650 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:57:38.651 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryiapGwMnyglAwgpzL 131133 - 200 - application/json;+charset=utf-8 23.1831ms
+2023-04-28 11:58:20.824 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryB7G7LCv2KREzEUZu 4458372
+2023-04-28 11:58:20.825 -03:00 [INF] CORS policy execution successful.
+2023-04-28 11:58:20.825 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:58:20.825 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 11:58:20.936 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 11:58:20.939 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 113.6649ms
+2023-04-28 11:58:20.939 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:58:20.940 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryB7G7LCv2KREzEUZu 4458372 - 200 - application/json;+charset=utf-8 116.0013ms
+2023-04-28 11:59:00.736 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundary5xr6kaPCSJD8YIaQ 345936
+2023-04-28 11:59:00.737 -03:00 [INF] CORS policy execution successful.
+2023-04-28 11:59:00.737 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:59:00.737 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 11:59:00.791 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 11:59:00.793 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 54.0839ms
+2023-04-28 11:59:00.793 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:59:00.794 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundary5xr6kaPCSJD8YIaQ 345936 - 200 - application/json;+charset=utf-8 58.3507ms
+2023-04-28 11:59:16.071 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundary7UVT05WN2NHwvHr3 135564
+2023-04-28 11:59:16.071 -03:00 [INF] CORS policy execution successful.
+2023-04-28 11:59:16.071 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:59:16.071 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 11:59:16.098 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 11:59:16.108 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 37.045ms
+2023-04-28 11:59:16.108 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:59:16.108 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundary7UVT05WN2NHwvHr3 135564 - 200 - application/json;+charset=utf-8 37.8219ms
+2023-04-28 11:59:19.519 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryLgwzyBYgJJOBtFsW 135564
+2023-04-28 11:59:19.520 -03:00 [INF] CORS policy execution successful.
+2023-04-28 11:59:19.520 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:59:19.520 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 11:59:19.537 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 11:59:19.539 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 18.9907ms
+2023-04-28 11:59:19.539 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:59:19.540 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryLgwzyBYgJJOBtFsW 135564 - 200 - application/json;+charset=utf-8 20.4274ms
+2023-04-28 11:59:27.858 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryRz62G87wRFaYKsUX 5192874
+2023-04-28 11:59:27.858 -03:00 [INF] CORS policy execution successful.
+2023-04-28 11:59:27.858 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:59:27.858 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 11:59:27.974 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 11:59:27.976 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 117.9125ms
+2023-04-28 11:59:27.976 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:59:27.977 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryRz62G87wRFaYKsUX 5192874 - 200 - application/json;+charset=utf-8 119.5173ms
+2023-04-28 11:59:35.454 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryqooEo5K6359bmYvl 5192874
+2023-04-28 11:59:35.454 -03:00 [INF] CORS policy execution successful.
+2023-04-28 11:59:35.455 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:59:35.455 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 11:59:35.583 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 11:59:35.585 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 130.0011ms
+2023-04-28 11:59:35.585 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:59:35.586 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryqooEo5K6359bmYvl 5192874 - 200 - application/json;+charset=utf-8 131.6320ms
+2023-04-28 11:59:37.352 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryq0Q6bGWhtGIWUWC5 5192874
+2023-04-28 11:59:37.352 -03:00 [INF] CORS policy execution successful.
+2023-04-28 11:59:37.352 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:59:37.352 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 11:59:37.472 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 11:59:37.475 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 122.0849ms
+2023-04-28 11:59:37.475 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:59:37.476 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryq0Q6bGWhtGIWUWC5 5192874 - 200 - application/json;+charset=utf-8 124.1868ms
+2023-04-28 11:59:39.061 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryAaDV0BdJbpzaA0iT 5192874
+2023-04-28 11:59:39.061 -03:00 [INF] CORS policy execution successful.
+2023-04-28 11:59:39.061 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:59:39.061 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 11:59:39.192 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 11:59:39.194 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 133.0473ms
+2023-04-28 11:59:39.194 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:59:39.195 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryAaDV0BdJbpzaA0iT 5192874 - 200 - application/json;+charset=utf-8 134.4733ms
+2023-04-28 11:59:40.634 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryT1dwVSZDU68l6CAV 5192874
+2023-04-28 11:59:40.634 -03:00 [INF] CORS policy execution successful.
+2023-04-28 11:59:40.634 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:59:40.634 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 11:59:40.739 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 11:59:40.741 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 106.6929ms
+2023-04-28 11:59:40.741 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 11:59:40.742 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryT1dwVSZDU68l6CAV 5192874 - 200 - application/json;+charset=utf-8 108.0394ms
+2023-04-28 12:01:59.788 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryJLD8TwLT1AsStMmi 224101
+2023-04-28 12:01:59.788 -03:00 [INF] CORS policy execution successful.
+2023-04-28 12:01:59.788 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 12:01:59.788 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 12:01:59.821 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 12:01:59.823 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 34.2055ms
+2023-04-28 12:01:59.823 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 12:01:59.824 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryJLD8TwLT1AsStMmi 224101 - 200 - application/json;+charset=utf-8 35.5606ms
+2023-04-28 12:05:49.426 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryo2RaXB6VQ3ATrJtT 224101
+2023-04-28 12:05:49.427 -03:00 [INF] CORS policy execution successful.
+2023-04-28 12:05:49.427 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 12:05:49.427 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 12:05:49.457 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 12:05:49.459 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 31.9861ms
+2023-04-28 12:05:49.459 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 12:05:49.460 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryo2RaXB6VQ3ATrJtT 224101 - 200 - application/json;+charset=utf-8 33.5879ms
+2023-04-28 12:13:25.375 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 12:13:25.389 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger - -
+2023-04-28 12:13:25.405 -03:00 [INF] Hosting environment: Development
+2023-04-28 12:13:25.405 -03:00 [INF] Content root path: C:\Users\lconde\Desktop\Dividir archivos\web - servidor\backend\WebApplication1
+2023-04-28 12:13:25.445 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/index.html - -
+2023-04-28 12:13:25.452 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger - - - 301 - - 65.5874ms
+2023-04-28 12:13:25.506 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/index.html - - - 200 - text/html;charset=utf-8 61.4860ms
+2023-04-28 12:13:25.513 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/swagger-ui.css - -
+2023-04-28 12:13:25.513 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/swagger-ui-bundle.js - -
+2023-04-28 12:13:25.513 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/swagger-ui-standalone-preset.js - -
+2023-04-28 12:13:25.543 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-04-28 12:13:25.543 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-04-28 12:13:25.543 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-04-28 12:13:25.546 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/swagger-ui.css - - - 200 142933 text/css 32.5685ms
+2023-04-28 12:13:25.553 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 39.8454ms
+2023-04-28 12:13:25.575 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 61.6487ms
+2023-04-28 12:13:25.717 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44323/swagger/swagger-ui-bundle.js.map - -
+2023-04-28 12:13:25.735 -03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js.map responded 404 in 0.4950 ms
+2023-04-28 12:13:25.737 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44323/swagger/swagger-ui-bundle.js.map - - - 404 - - 20.6797ms
+2023-04-28 12:13:25.820 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44323/swagger/swagger-ui-standalone-preset.js.map - -
+2023-04-28 12:13:25.820 -03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js.map responded 404 in 0.0042 ms
+2023-04-28 12:13:25.821 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44323/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 0.9199ms
+2023-04-28 12:13:25.867 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - -
+2023-04-28 12:13:25.921 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 53.5143ms
+2023-04-28 12:17:13.226 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-28 12:17:13.240 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger - -
+2023-04-28 12:17:13.256 -03:00 [INF] Hosting environment: Development
+2023-04-28 12:17:13.256 -03:00 [INF] Content root path: C:\Users\lconde\Desktop\Dividir archivos\web - servidor\backend\WebApplication1
+2023-04-28 12:17:13.294 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/index.html - -
+2023-04-28 12:17:13.307 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger - - - 301 - - 69.6729ms
+2023-04-28 12:17:13.357 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/index.html - - - 200 - text/html;charset=utf-8 62.7800ms
+2023-04-28 12:17:13.365 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/swagger-ui.css - -
+2023-04-28 12:17:13.365 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/swagger-ui-bundle.js - -
+2023-04-28 12:17:13.365 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/swagger-ui-standalone-preset.js - -
+2023-04-28 12:17:13.387 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-04-28 12:17:13.387 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-04-28 12:17:13.387 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-04-28 12:17:13.390 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/swagger-ui.css - - - 200 142933 text/css 25.1185ms
+2023-04-28 12:17:13.397 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 32.3286ms
+2023-04-28 12:17:13.418 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 53.3737ms
+2023-04-28 12:17:13.668 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44323/swagger/swagger-ui-bundle.js.map - -
+2023-04-28 12:17:13.686 -03:00 [INF] HTTP GET /swagger/swagger-ui-bundle.js.map responded 404 in 0.2960 ms
+2023-04-28 12:17:13.688 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44323/swagger/swagger-ui-bundle.js.map - - - 404 - - 19.1381ms
+2023-04-28 12:17:13.843 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:44323/swagger/swagger-ui-standalone-preset.js.map - -
+2023-04-28 12:17:13.844 -03:00 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js.map responded 404 in 0.0131 ms
+2023-04-28 12:17:13.846 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:44323/swagger/swagger-ui-standalone-preset.js.map - - - 404 - - 3.6182ms
+2023-04-28 12:17:13.904 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - -
+2023-04-28 12:17:13.953 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 49.8177ms
+2023-04-28 12:19:43.251 -03:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryxSlQ89sjTbAqTQyV 131133
+2023-04-28 12:19:43.256 -03:00 [INF] CORS policy execution successful.
+2023-04-28 12:19:43.261 -03:00 [INF] Executing endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 12:19:43.293 -03:00 [INF] Route matched with {action = "Upload", controller = "UploadFile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(Microsoft.AspNetCore.Http.IFormFile) on controller WebApplication1.Controllers.UploadFileController (WebApplication1).
+2023-04-28 12:19:45.777 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-04-28 12:19:45.787 -03:00 [INF] Executed action WebApplication1.Controllers.UploadFileController.Upload (WebApplication1) in 2490.1846ms
+2023-04-28 12:19:45.788 -03:00 [INF] Executed endpoint 'WebApplication1.Controllers.UploadFileController.Upload (WebApplication1)'
+2023-04-28 12:19:45.788 -03:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/UploadFile/upload multipart/form-data;+boundary=----WebKitFormBoundaryxSlQ89sjTbAqTQyV 131133 - 200 - application/json;+charset=utf-8 2539.5353ms
